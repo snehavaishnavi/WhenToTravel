@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="tempPref"
+        android:title="Temperature Unit"
+        android:summary="Here you can make your choices"
+        android:entries="@array/tempPreference_options"
+        android:entryValues="@array/tempPreference_values"
+        android:defaultValue="celsius" />
+</PreferenceScreen>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="searchCity_label">City(i.e. Charlotte)</string>
+    <string name="searchCountry_label">Country(i.e. US)</string>
+    <string name="searchBtn_label">Search</string>
+    <string name="empty_list_label">There are no cities to display. Search the city from search box and save.</string>
+    <string name="settings_option_label">Settings</string>
+    <string name="save_option_label">Save City</string>
+    <string name="forecast_title_label">Daily Forecast for</string>
+    <string name="three_hourly_forecast_label">Three Hourly Forecast on</string>
+    <string name="text_temp_label">Temperature :</string>
+    <string name="text_condition_label">Condition :</string>
+    <string name="text_pressure_label">Pressure :</string>
+    <string name="text_humidity_label">Humidity :</string>
+    <string name="text_wind_label">Wind :</string>
+    <string-array name="tempPreference_options">
+        <item>&#176; C</item>
+        <item>&#176; F</item>
+    </string-array>
+    <string-array name="tempPreference_values">
+        <item>C</item>
+        <item>F</item>
+    </string-array>
+</resources>

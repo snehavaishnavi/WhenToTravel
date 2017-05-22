@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borders">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTimeValue"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/imageIcon1"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textTimeValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/text_temp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTempLabel"
+        android:layout_marginLeft="37dp"
+        android:textSize="15dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imageIcon1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textTempLabel"
+        android:layout_toEndOf="@+id/textTempLabel"
+        android:id="@+id/textTempValue"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:text="@string/text_condition_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTempLabel"
+        android:layout_alignLeft="@+id/textTempLabel"
+        android:layout_alignStart="@+id/textTempLabel"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textConditionLabel"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCondValue"
+        android:layout_alignBottom="@+id/textConditionLabel"
+        android:layout_alignLeft="@+id/textTempValue"
+        android:layout_alignStart="@+id/textTempValue"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:text="@string/text_pressure_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textConditionLabel"
+        android:layout_alignLeft="@+id/textConditionLabel"
+        android:layout_alignStart="@+id/textConditionLabel"
+        android:layout_marginTop="10dp"
+        android:id="@+id/PressureLabel"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/PressureLabel"
+        android:layout_alignLeft="@+id/textCondValue"
+        android:layout_alignStart="@+id/textCondValue"
+        android:id="@+id/textPressureValue"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:text="@string/text_humidity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/PressureLabel"
+        android:layout_alignLeft="@+id/PressureLabel"
+        android:layout_alignStart="@+id/PressureLabel"
+        android:id="@+id/HumidityLabel"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/HumidityLabel"
+        android:layout_alignLeft="@+id/textPressureValue"
+        android:layout_alignStart="@+id/textPressureValue"
+        android:id="@+id/textHumidityValue"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:text="@string/text_wind_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HumidityLabel"
+        android:layout_alignLeft="@+id/HumidityLabel"
+        android:layout_alignStart="@+id/HumidityLabel"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textWindLabel"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textWindLabel"
+        android:layout_alignLeft="@+id/textHumidityValue"
+        android:layout_alignStart="@+id/textHumidityValue"
+        android:id="@+id/textWindValue"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
